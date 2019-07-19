@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-rcdklibs
 ================
 
@@ -18,8 +14,15 @@ Summary: An R interface to the Chemistry Development Kit, a Java library for che
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-rcdklibs-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-rcdklibs-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6086&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rcdklibs-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
