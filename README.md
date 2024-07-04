@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcdklibs-feed
 
 Home: https://CRAN.R-project.org/package=rcdklibs
 
-Package license: LGPL
+Package license: LGPL-2.0-or-later
 
 Summary: An R interface to the Chemistry Development Kit, a Java library for chemoinformatics. Given the size of the library itself, this package is not expected to change very frequently. To make use of the CDK within R, it is suggested that you use the 'rcdk' package. Note that it is possible to directly interact with the CDK using 'rJava'. However 'rcdk' exposes functionality in a more idiomatic way. The CDK library itself is released as LGPL and the sources can be obtained from <https://github.com/cdk/cdk>.
 
