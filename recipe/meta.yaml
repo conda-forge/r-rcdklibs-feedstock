@@ -1,6 +1,5 @@
 {% set version = "2.9" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-rcdklibs
@@ -13,8 +12,7 @@ source:
   sha256: ef91ad0411f35c5bafcec03b986c8bab99782b7be858a86d944877308ab1b4c1
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -25,10 +23,10 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-rjava >=0.9_8
+    - r-rjava
   run:
     - r-base
-    - r-rjava >=0.9_8
+    - r-rjava
 
 test:
   commands:
@@ -37,11 +35,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=rcdklibs
-  license: LGPL
+  license: LGPL-2.0-or-later
   summary: An R interface to the Chemistry Development Kit, a Java library for chemoinformatics. Given the size of the library itself, this package is not expected to change very frequently. To make use of the CDK within R, it is suggested that you use the 'rcdk' package. Note that it is possible to directly interact with
     the CDK using 'rJava'. However 'rcdk' exposes functionality in a more idiomatic way. The CDK library itself is released as LGPL and the sources can be obtained from <https://github.com/cdk/cdk>.
   license_family: LGPL
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
